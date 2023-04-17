@@ -1,26 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
-.container{
-    background-image: url(../imagens/bayerndemunique_reu_15.jpg);
-    height: 700px;
-    background-size: cover;
-    background-position: right center;
-    margin: 0 auto;
-    align-items: center;
-}
 .topo{
     background-image: url(../imagens/bayerndemunique_reu_15.jpg);
     height: 700px;
     background-size: cover;
     background-position: right center;
+    border-top: 1px solid transparent;
 }
 .topo-conteudo{
     text-align: center;
@@ -29,22 +21,89 @@ html{
 .topo-conteudo h1{
     text-transform: uppercase;
     font-size: 36px;
-    text-shadow: 3px 3px 5px #f30505;
+    text-shadow: 3px 3px 5px #ffffff;
     margin-top: 50px;
+    
 }
 .topo-conteudo p{
     text-shadow: 3px 3px 5px #c50000a1;
     font-size: 30px;
     margin-top: 50px;
 }
+.topo nav ul{
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
 
+.topo nav li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.topo nav a{
+    display: block;
+    background: rgb(220, 5, 45);
+    background: rgba(220, 5, 45,2);
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.nav.topo{
+    display: flex;
+    justify-content: center;
+}
+.btn-inicio{
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+.btn-inicio:focus{
+    outline: none;
+}
+.btn-inicio:hover{
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #db2b14;
+}
+.btn-inicio li a:nth-child(2){
+    transition: 0.5s;
+    margin-right: 0px;
+}
+.btn-inicio:hover li a:nth-child(2){
+    transition: 0.5s;
+    margin-right: 45px;
+}
+li a{
+    transform: skewX(15deg) 
+}
+li a:nth-child(2){
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
   /* Estilos para o carrossel */
+.main{
+    margin-top: 2px;
+}
 section.slider{
     margin: 0 auto;
     width: 100%;
     height: auto;
     padding: 0 !important;
     overflow: hidden;
+    color: #717171;
 }
 .slider-content{
     width: 400%;
@@ -69,6 +128,7 @@ section.slider{
     width: 100%;
     justify-content: center;
     margin-top: 10px;
+    
 }
 
 .nav-manual .manual-btn, .nav-auto div{
